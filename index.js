@@ -8,7 +8,7 @@ import getCurrency3 from "./arsData/getCurrency3.js";
 import  getAllAverage  from "./getAllAverage.js";
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
