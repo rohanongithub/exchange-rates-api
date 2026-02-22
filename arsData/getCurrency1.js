@@ -6,7 +6,7 @@ dotenv.config();
 async function getCurrency1(target_currency) {
 
     const response = await fetch(
-      `https://v6.exchangerate-api.com/v6/` + process.env.GET_CURRENCY_1_API +`/latest/USD`
+      `https://v6.exchangerate-api.com/v6/` + `c1c410d4c0c5989e2479e348` +`/latest/USD`
     );
     const data = await response.json();
     const currentRateARS = data.conversion_rates[target_currency]

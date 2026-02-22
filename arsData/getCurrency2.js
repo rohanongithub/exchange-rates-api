@@ -6,7 +6,7 @@ import { configDotenv } from "dotenv";
 async function getCurrency2(target_currency) {
  
     const response = await fetch(
-      `https://api.currencyfreaks.com/v2.0/rates/latest?apikey=` + process.env.GET_CURRENCY_2_API
+      `https://api.currencyfreaks.com/v2.0/rates/latest?apikey=` + `d506d542a4b84ebbbf10b1490fa1ace9`
     );
     const data = await response.json();
     const currentRateARS = parseFloat(data.rates[target_currency]);
